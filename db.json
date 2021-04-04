@@ -1,0 +1,34 @@
+{
+    "Pizza": [
+        {
+            "id": 1,
+            "pizza_type": "Pizza_Margarita",
+            "price": "10£",
+             "ingradients": "mosarella"
+        },
+        {
+            "id": 1,
+            "pizza_type": "Pizza_Peparoni",
+            "price": "12£",
+             "ingradients": "peparoni"
+        },
+        {
+            "id": 1,
+            "pizza_type": "Pizza_al_padellino",
+            "price": "10£",
+             "ingradients": "prosciutto"
+        },
+        {
+            "id": 1,
+            "pizza_type": "Pizza_Siciliana",
+            "price": "15£",
+             "ingradients": "anchovies"
+        },
+        {
+            "id": 1,
+            "pizza_type": "Pizza_Fritta",
+            "price": "12£",
+             "ingradients": "ricotta"
+        }
+    ]
+}

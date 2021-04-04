@@ -1,0 +1,58 @@
+.div{
+    background-image: url("https://raw.githubusercontent.com/nirmalieo3/FoodDeliveryLab/master/img/photo3.jpg");
+  
+    width:100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.navbar{
+  
+    width:55%;
+    margin: 0 auto;
+    height:80px;
+    border-radius: 5px;
+}
+
+.me-2{
+    width: 40em;
+    height: 55px;
+    border-radius: 5px;
+}
+/*mat card*/
+.container1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+.example-card{
+    width:340px;
+     height:200px;
+    margin: 70px auto;
+    border-radius: 5px;
+
+}
+.mat-card-image{
+    height:200px;
+}
+
+  .style{
+      padding: 70px 0;
+  }
+  
+    @media only screen and (max-width: 600px) {
+        .navbar{
+            width: 85%;
+        }
+        .me-2{
+            width: 15em;
+        }
+  }
+
+  /*gallary*/
+ 
+  
+  
