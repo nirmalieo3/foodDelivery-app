@@ -1,34 +1,27 @@
 {
-    "Pizza": [
+  "people": [
+    {
+      "name": "Nirmalie",
+      "address": "Fernando",
+      "items": [
         {
-            "id": 1,
-            "pizza_type": "Pizza_Margarita",
-            "price": "10£",
-             "ingradients": "mosarella"
+          "Prodotto": "Birra Chouffe Blonde 33cl",
+          "qty": 1,
+          "price": "4.5"
         },
         {
-            "id": 1,
-            "pizza_type": "Pizza_Peparoni",
-            "price": "12£",
-             "ingradients": "peparoni"
+          "Prodotto": "Birra Blanche de Namur 33cl",
+          "qty": 1,
+          "price": "4"
         },
         {
-            "id": 1,
-            "pizza_type": "Pizza_al_padellino",
-            "price": "10£",
-             "ingradients": "prosciutto"
-        },
-        {
-            "id": 1,
-            "pizza_type": "Pizza_Siciliana",
-            "price": "15£",
-             "ingradients": "anchovies"
-        },
-        {
-            "id": 1,
-            "pizza_type": "Pizza_Fritta",
-            "price": "12£",
-             "ingradients": "ricotta"
+          "Prodotto": "Coca Cola",
+          "qty": 1,
+          "price": "4"
         }
-    ]
+      ],
+      "total": 12.5,
+      "id": 1
+    }
+  ]
 }

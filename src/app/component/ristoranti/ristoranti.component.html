@@ -1,1 +1,40 @@
-<p>ristoranti works!</p>
+<body>
+ <div class="row">
+  <div class="col" *ngFor= "let item of productList">
+  <a class="nav-link active" [routerLink] ="['/menu']">
+  <mat-card class="example-card">
+  
+      <mat-card class="card-container">
+      <mat-card-title>{{item. Ristorante}}</mat-card-title>
+      
+      </mat-card>
+    <div class="row">
+        <div class="col-6">
+            <img mat-card-image [src]= "'http://l4com.labforweb.it/backend/web/img/ristoranti/' + item.Logo">
+        </div>
+        <div class="col-6 type">
+            <h1>{{item.tipologia.Tipologia}}</h1>
+        </div> 
+    </div> 
+   
+    <mat-card-content >
+        <mat-card class="card-container2">
+      <div>
+      <h2><a href="" >OrdineMinimo: {{item.OrdineMinimo}} €</a></h2> 
+      </div> 
+      <div>
+      <h2> TempiConsegna: {{item.TempiConsegna}} minuti</h2> 
+      </div> 
+      <div>
+        <h2> CostiConsegna: {{item.CostiConsegna}} €</h2> 
+        </div>
+     
+      
+      </mat-card> 
+    </mat-card-content>
+   
+   </mat-card>
+   </a>
+  </div>
+ </div>
+</body>

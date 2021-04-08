@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'src/app/service/shared.service';
 
 @Component({
   selector: 'app-ristoranti',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ristoranti.component.css']
 })
 export class RistorantiComponent implements OnInit {
-
-  constructor() { }
+   productList: any;
+  constructor(public sharedService : SharedService) { }
 
   ngOnInit(): void {
+    this.getDati();
   }
-
+  getDati(){
+    this.sharedService.getProducts().subscribe(data=>{
+      console.log(data,'Dati');
+      this.productList = data;
+    })
+  }
 }

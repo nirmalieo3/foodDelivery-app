@@ -1,0 +1,28 @@
+.main {
+    height: 800px;
+   
+}
+table{
+    width:60%;
+    color:white;
+    margin: 50px 50px;
+    font-size: 22px;
+}
+h1{
+    text-align: center;
+     padding-top: 20px;
+}
+input{
+    margin: 10px 50px;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+.style{
+    background-color: cornflowerblue;
+    margin:50px;
+    width:60%;
+}

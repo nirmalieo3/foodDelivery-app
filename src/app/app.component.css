@@ -1,6 +1,6 @@
 body{
     background-image: url("https://raw.githubusercontent.com/nirmalieo3/FoodDeliveryLab/master/img/photo3.jpg");
-  
+    height:fit-content;
     width:100%;
    background-attachment: fixed;
     background-repeat: no-repeat;
@@ -8,20 +8,19 @@ body{
     
 }
 footer{
-     
   width: 100%;
 }
 .container2{
   width:26%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
  margin-left: 5%;
 
 }
 .container{
   width:36%;
   display: flex;
-  justify-content:end;
+  justify-content:flex-end;
  margin-left: 45%;
 
 }
@@ -29,14 +28,17 @@ footer{
   .container2{
     width:80%;
     display: flex;
-    justify-content:start;
+    justify-content:flex-start;
    margin-left: 5%;
   
   }
   .container{
     width:80%;
     display: flex;
-    justify-content:start;
+    justify-content: flex-start;
    margin-left: 10%;
 }
+/*body{
+  height:inherit;
+}*/
 }

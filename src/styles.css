@@ -7,7 +7,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .container3{
     width:26%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
    margin-left: 74%;
   
 }
@@ -120,6 +120,17 @@ a.socialIcon:hover, .socialHoverClass {
 
 @media only screen and (max-device-width: 1024px){
     .container{
+        width:100%;
+        display:inline-block;
+        margin-left: 0;
+    }
+    .navbar-nav{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-device-width: 1024px){
+    .container3{
         width:100%;
         display:inline-block;
         margin-left: 0;

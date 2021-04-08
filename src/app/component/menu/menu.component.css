@@ -1,0 +1,64 @@
+.container{
+    width:100%;
+    
+}
+.example-card{
+    width:210px;
+    background-color: white;
+    margin: 40px auto;
+    border-radius: 5px;
+      
+ }
+
+ /*.small{
+     width: 380px;
+     margin-left: 0px;
+     margin-top: 50px;
+    background-color: rgb(163, 139, 108);
+    height: fit-content; 
+}*/
+
+.small{
+   
+    margin-top: 50px;
+  
+   height: fit-content; 
+}
+.but{
+   margin-left: 50px;
+   margin-top: 10px;
+   background-color: rgb(94,0,0);
+   color: white;
+}
+.content{
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.btn{
+    background-color: rgb(94,0,0);
+    border-radius: 50%;
+    font-size: 16px;
+    color: white;
+    margin: 0 8px;
+}
+.btn2{
+    width:25px;
+    background-color: rgb(94,0,0);
+    border-radius: 50%;
+    font-size: 10px;
+    color: white;
+    margin: 0 2px;
+}
+
+.but2{
+   
+     width:10px;
+    background-color: rgb(94,0,0);
+    color: white;
+ }
+ @media only screen and (max-width: 600px){
+     .small{
+         width:350px;
+     }
+   
+ }

@@ -1,0 +1,45 @@
+
+<div class="main">
+<div class="style">
+    <h1>Riepilogo</h1>
+  <div class="table-responsive-sm">
+    <table class='table table-borderless'>
+      <thead>
+         <tr>
+            <th scope="col">name</th>                           
+         </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let item of cartItems; let i=index">
+           <td scope="row"><span>{{item.Prodotto}}</span></td>
+                              
+          </tr>
+          <tr>
+            <td><strong>Total :  {{ cartTotal | currency: 'EUR'}}</strong></td>               
+          </tr>  
+      </tbody>
+     </table>
+     
+   </div>
+   <div *ngFor= 'let item of personeList'>{{item.name}}
+    {{item.address}}{{item.total}} 
+    <p *ngFor="let product of item.items">{{product.Prodotto}}</p>
+   </div>
+ <h3>Aggungi persona (inserire il nome):</h3>
+ <input tye="text" [(ngModel)] = "nome">
+ <br><br>
+ <input tye="text" [(ngModel)] = "indirizzo">
+ <br><br>
+ <button mat-button mat-raised-button color="primary"
+    (click)= "postDati()" [disabled]="!nome">Aggiungi Persona</button>
+   <br><br>
+   <h3>Aggungi indirizzo (inserire il indirizzo):</h3>
+ 
+  <button mat-button mat-raised-button color="primary"
+   (click)= "postDati()" [disabled]="!indirizzo">Aggiungi indirizzo</button>
+  <br><br>
+</div>
+</div>
+
+
+ 
