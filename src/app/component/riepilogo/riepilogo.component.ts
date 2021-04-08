@@ -33,10 +33,8 @@ export class RiepilogoComponent implements OnInit {
 
 
   getDati(){
-   
     this.msgService.getPeople().subscribe(data=>{
- 
-     console.log(data, 'Dati');
+    console.log(data, 'Dati');
      this.personeList = data;
     })
   };
