@@ -3,7 +3,7 @@
 * home component: Mat card in the template, and an array of images in the ts file to create  images in the home.
 * resturanti component using shared service got data from a API service and using a mat-card, and ngFor in the template to get data from the ts file.
    also Product interface has been created to get backend data.
-* when click one of the restaurent goes to menu page. and there data comes from a API backend service, using shared service and interface menu got the data to the
+* clicking one of the restaurent goes to menu page. and there data comes from a API backend service, using shared service and interface menu got the data to the
    menu component. using ngFor and menuList, products has shown in the template. add to cart , increse, decrese products  function has been created.
    in the menu component shopping cart has created using a mat-card, addItemstoCart function and ngfor with cartItems array used to populate data in the shopping cart. also add,      minus, and delete  functions has created in the shopping cart.
  * When click shopping cart icon it opens shopping cart component.using shared service and setCartItems() in the menu.ts ,getCartItems in the cart component data has sent to 
