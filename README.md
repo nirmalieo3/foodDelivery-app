@@ -10,8 +10,7 @@
    the card component.Using ngFor, cartItems and index i in the cart template populated data in the cart component.
  * when click the submit button in the card component riepilogo page will open. in riepilogo.ts using shared service and getCartItems() that already been there got products from 
    the cart item. To get total getCartTotal() has used in the riepilogo.ts. In here db.json file has used to get data and post data. in msgService use postPeople() to post data to    json server and use getPeople() to get data from the json server in local host.also use postDati(), getDati() related to getPeople() and postPeople() in msgService. In        
-   ripielogo template used ngModel and input field to get data. to populate json data in the template used ngFor and personList array. Also products is a sub array of the json   
-   file, again use ngFor with item.items array to populate product list.
+   ripielogo template used ngModel and input field to get data. to populate json data in the template used ngFor and personList array. Also products is a sub array of the json   file, so again use ngFor with item.items array to populate product list.
    
    
    
