@@ -9,11 +9,19 @@ import { SharedService } from 'src/app/service/shared.service';
 export class CartComponent implements OnInit {
   public cartItems: any;
   cartTotal;
+  costoConsegna;
+  ordineMinimo;
   constructor(public sharedService: SharedService) { }
 
   ngOnInit(): void {
-    console.log(this.sharedService.getCartItems());
     this.cartItems = this.sharedService.getCartItems();
+    console.log('carello cart items', this.cartItems);
+    if(this.sharedService.getRistoranteData() && this.cartItems && this.cartItems.length){
+      this.costoConsegna = Number(this.sharedService.getRistoranteData().CostiConsegna);
+      this.ordineMinimo = this.sharedService.getRistoranteData().OrdineMinimo;
+    } else {
+      this.costoConsegna = 0;
+    }
     this.getCardTotal();
   }
   getCardTotal(){

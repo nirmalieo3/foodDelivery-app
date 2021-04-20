@@ -11,7 +11,16 @@ import {MatCardModule} from '@angular/material/card';
 import { MenuComponent } from './component/menu/menu.component';
 import { CartComponent } from './component/cart/cart.component';
 import { RiepilogoComponent } from './component/riepilogo/riepilogo.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import { LogintwoComponent } from './component/logintwo/logintwo.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { ReservedComponent } from './component/reserved/reserved.component';
+import {MatTableModule} from '@angular/material/table';
+import { CarouselComponent } from './component/carousel/carousel.component';
 
 
 @NgModule({
@@ -22,7 +31,10 @@ import { FormsModule } from '@angular/forms';
     RistorantiComponent,
     MenuComponent,
     CartComponent,
-    RiepilogoComponent
+    RiepilogoComponent,
+    LogintwoComponent,
+    ReservedComponent,
+    CarouselComponent
    
   ],
   imports: [
@@ -31,7 +43,14 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatCardModule,
     HttpClientModule,
-    FormsModule
+    ReactiveFormsModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],

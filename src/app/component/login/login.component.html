@@ -1,1 +1,44 @@
-<p>login works!</p>
+<h2>Login Form</h2>
+<p *ngIf="loginMessage">{{loginMessage}}</p>
+<mat-dialog-content class="mat-typography">
+ <form [formGroup]= "studentForm">
+  <div class="row">
+   <div class="col">
+    <div class="example-container">
+     <mat-form-field appearance="fill">
+       <mat-label>Enter your Username</mat-label>
+       <input matInput formControlName="username" class="form-control" id="exampleInputUsername"  placeholder="Username">
+        <span  *ngIf= "studentForm.get('username').errors && (studentForm.get('username').dirty || studentForm.get('username').touched)">
+        <p style="color: red;">username puo essere 6 charattere</p>
+        </span>
+     </mat-form-field>
+    </div>
+   </div>
+   <div class="col">
+    <div class="example-container">
+     <mat-form-field appearance="fill">      
+      <mat-label>Enter password</mat-label>
+      <input matInput placeholder="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+       <span 
+        *ngIf= "studentForm.get('password').errors && (studentForm.get('password').dirty || studentForm.get('password').touched)">
+        <p *ngIf= "studentForm.get('password').errors.required" class="p">Password is required</p>
+        <p *ngIf= "studentForm.get('password').errors.minlength" class="p">Password must be 8 characters long </p>
+        <p *ngIf= "studentForm.get('password').errors.maxlength" class="p">Password must be less than 14 characters long </p>
+     </span>
+      </mat-form-field>
+    </div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-6">
+    <button  mat-raised-button color="primary" (click)="postDati()">Accedi</button>
+  </div>  
+  </div>  
+ </form>
+ <div class="link">
+  <a href="">Ricorda password</a>
+ </div>
+ <div class="link">
+  <button mat-raised-button color="primary"><a (click)="openDialog2()">crea un nuovo account</a></button>
+ </div>
+</mat-dialog-content>

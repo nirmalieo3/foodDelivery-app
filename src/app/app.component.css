@@ -7,6 +7,13 @@ body{
     background-size: cover;
     
 }
+header{
+position: fixed;
+top:0;
+width:100%;
+z-index: 1;
+
+}
 footer{
   width: 100%;
 }
@@ -22,8 +29,16 @@ footer{
   display: flex;
   justify-content:flex-end;
  margin-left: 45%;
-
+ 
 }
+
+
+a.active {
+  cursor: pointer;
+  font-size: 25px;
+}
+
+
 @media only screen and (max-width: 600px){
   .container2{
     width:80%;
@@ -41,4 +56,5 @@ footer{
 /*body{
   height:inherit;
 }*/
+
 }

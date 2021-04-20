@@ -1,0 +1,101 @@
+body{
+background-image: url("https://raw.githubusercontent.com/nirmalieo3/FoodDeliveryLab/master/img/photo3.jpg");
+min-height:700px;
+width:100%;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+ table{
+   background-color: #95bfd4;
+    text-align: center;
+   
+}
+
+tr th{
+   padding: 20px;
+   text-align: center;
+   font-size: 22px;
+   font-weight: 600;
+   }
+   ng-container th{
+    font-weight: 600;
+   }
+  
+th span{
+    font-size: 22px;
+}
+tr td{
+    padding: 18px;
+    font-size: 22px;
+}
+.total td{
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*.but{
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: rgb(94,0,0);
+    color: white;
+ }*/
+ .content{
+     margin-top: 10px;
+    /* margin-left: 35px;*/
+ }
+
+ table .selected-row{
+     background-color:aquamarine;
+ }
+ 
+ .style1{
+    background-color: #95bfd4;
+     width:40%;
+     margin: 30px auto;
+     border-radius: 2%;
+     padding-bottom: 10px;
+ }
+ .card{
+     margin: 0 auto;
+     width:90%;
+     background-color: plum;
+ }
+ .main-title{
+     margin:40px 0;
+     color:white;
+     text-align: center;
+     font-size: 35px ;
+     font-weight: 700;
+ }
+ .card:hover{
+     box-shadow: 5px 5px 5px grey;
+ }
+ .h1{
+     text-align: center;
+     margin-top: 5px;
+     color:black;
+     font-weight: 700;
+ }
+ mat-card-subtitle{
+     text-align: center;
+     color:black;
+     font-size: 18px;
+     font-weight: 800;
+ }
+ .main-container{
+ 
+  width:100%;
+  background-color: thistle;
+  opacity:.9;
+  margin-top: 100px;
+ }
+
+ .card2{
+     width:95%;
+     background-color: #95bfd4;
+ }
+
+ 

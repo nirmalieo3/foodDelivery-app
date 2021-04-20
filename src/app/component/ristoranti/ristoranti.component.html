@@ -1,7 +1,7 @@
 <body>
  <div class="row">
   <div class="col" *ngFor= "let item of productList">
-  <a class="nav-link active" [routerLink] ="['/menu']">
+  <a class="nav-link active" (click)="clickRistorante(item)">
   <mat-card class="example-card">
   
       <mat-card class="card-container">

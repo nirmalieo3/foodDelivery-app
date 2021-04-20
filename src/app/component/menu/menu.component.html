@@ -1,58 +1,51 @@
+<body>
+ <h1 class="h1">Menu</h1>
 <div class="container">
-  <div class="row">
-    <div class="col-8">Column
-      <div class="row">
-      <div class="col" *ngFor= "let item of menuList">
-      
-        <mat-card class="example-card">
-           
-            <mat-card-title>{{item.Prodotto}}</mat-card-title>
-              <mat-card-subtitle>prezzo: {{item.Prezzo}} €</mat-card-subtitle>
-              <mat-card-subtitle>Descrizione:{{item.Descrizione}}</mat-card-subtitle>
-          
-                 
-            <mat-card-actions>
-              <div class="content">
-                <button mat-button class="btn"><i class= "fa fa-plus" (click)="inc(item)"></i></button>
-                {{item.qty}}
-                <button mat-button class="btn"><i class= "fa fa-minus" (click)="dec(item)"></i></button>
-                </div>
-              <button class="but" mat-button (click)="addItemsToCart(item)">Add to cart</button>
-                                 
-            </mat-card-actions>
-          </mat-card>
-      
+  <h1 class="h1">Menu</h1>
+ <div class="row">
+  <div class="col-8">
+   <div class="row">
+    <div class="col" *ngFor= "let item of menuList">
+      <mat-card class="example-card">
+        <mat-card-title>{{item.Prodotto}}</mat-card-title>
+        <h2 style="font-weight:700">prezzo: {{item.Prezzo}} €</h2>
+        <h2 style="font-weight:700">Descrizione:
+           {{item.Descrizione}}</h2>               
+        <mat-card-actions>
+          <div class="content">
+           <button  class="btn"><i class= "fa fa-plus" (click)="inc(item)"></i></button>
+           {{item.qty}}
+           <button  class="btn"><i class= "fa fa-minus" (click)="dec(item)"></i></button>
+          </div>
+           <button class="but" (click)="addItemsToCart(item)">Add to cart</button>                     
+        </mat-card-actions>
+      </mat-card>   
     </div>
-
+   </div>
+  </div>
+  <div class="col-4 small alert alert-info">
+  <button class="nav-link active btn4" [routerLink] ="['/cart']" >
+   <h1>Go to Shopping Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></h1></button>
+    <div *ngIf= "cartItems.length === 0" class="alert alert-info">
+      <p>Your cart is empty</p>
     </div>
-    </div>
-   
-    <div class="col-4 small alert alert-info">
-      <h1>Shopping <i class="fa fa-shopping-cart" aria-hidden="true">
-        <a class="nav-link active" [routerLink] ="['/cart']"></a>
-      </i></h1>
-      <div *ngIf= "cartItems.length === 0" class="alert alert-info">
-        
-        <p>Your cart is empty</p>
-      </div>
       <ul *ngIf= "cartItems.length > 0" class="list-group">
         <li class="list-group-item" *ngFor="let item of cartItems; let i=index">
-          <span>{{item.Prodotto}} </span><span>{{item.qty}} </span> * 
-          <span>{{item.price}}</span> 
-          :<strong> {{ (item.qty*item.price) | currency: 'EUR'}}</strong>
-          <button class="btn2"><i class= "fa fa-minus" (click)="dec(item)"></i></button>
-          <button class="btn2"><i class= "fa fa-plus" (click)="inc(item)"></i></button>
-          <button class="btn2"><i class="fa fa-trash" (click)="deleteItem(item, i)" ></i></button>
-         
+         <span>{{item.Prodotto}} </span><span>{{item.qty}} </span> * 
+         <span>{{item.price}}</span> 
+         :<strong> {{ (item.qty*item.price)}}€</strong>
+         <button class="btn2"><i class= "fa fa-minus" (click)="dec(item)"></i></button>
+         <button class="btn2"><i class= "fa fa-plus" (click)="inc(item)"></i></button>
+         <button class="btn2"><i class="fa fa-trash" (click)="deleteItem(item, i)" ></i></button>
         </li>
         <li class="list-group-item active">            
-          <strong>Costo consegna:  </strong>
+          <strong>Costo consegna: {{cartTotal > ordineMinimo? 0 : costoConsegna}} </strong>
         </li>
         <li class="list-group-item active">            
-          <strong>Total :  {{ cartTotal | currency: 'EUR'}}</strong>
+          <strong>Total :  {{cartTotal > ordineMinimo? cartTotal : (cartTotal + costoConsegna)}}€</strong>
         </li>
       </ul>
-     
-    </div>
-    </div>
-    </div>
+  </div>
+ </div>
+</div>
+</body>

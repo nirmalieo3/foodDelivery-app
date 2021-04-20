@@ -17,39 +17,31 @@ h1 {
 img{
     width:100px;
 }
-/*table{
-    margin:10px auto;
-    width: 95%;
-   background-color: #95bfd4;
-   
-    text-align: center;
-}*/
+
 table{
     background-color: #95bfd4;
     width:90%;
     margin:0 auto;
     text-align: center;
 }
-th{
+tr th{
    padding: 20px;
    text-align: center;
-  
+   font-size: 22px;
 }
-span{
-    font-size: 18px;
-}
-/*th span{
+
+th span{
     font-size: 22px;
 }
-td{
-    padding: 15px;
-    font-size: 18px;
+tr td{
+    padding: 18px;
+    font-size: 22px;
 }
 .total td{
     padding: 15px;
     font-size: 20px;
     font-weight: bold;
-}*/
+}
 
 .but{
     margin-left: 50px;
@@ -69,7 +61,6 @@ td{
      margin: 0 8px;
  }
  .btn2{
-   
      background-color: rgb(94,0,0);
      border-radius: 50%;
      font-size: 16px;
@@ -78,10 +69,17 @@ td{
  }
  
  .but2{
-    
- 
      background-color: rgb(94,0,0);
      color: white;
   }
-  
+  .btn3{
+    background-color: rgb(94,0,0);
+    font-size: 22px;
+    color: white;
+    margin: 0 2px;
+    border-radius: 5%;
+  }
+  .btn3:hover{
+    background-color: burlywood;
+  }
  

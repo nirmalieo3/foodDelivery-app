@@ -1,57 +1,6 @@
 <body>
-    <h1>Shopping Cart</h1>
-    
-  <div class="table-responsive table-striped table-bordered table-hover">  
-     <table class="table">
-    <thead>  
-         <tr>  
-             <th scope="row">  
-                 <span>id</span>  
-             </th>  
-             <th scope="row">  
-                 <span>pizza</span>  
-             </th>  
-             <th scope="row">  
-                 <span>price</span>  
-             </th>  
-             <!--<th scope="row">  
-                 <span>ingradient</span>  
-             </th>  
-             <th scope="row">  
-                 <span>image</span>  
-             </th> -->
-             <th scope="row">  
-                 <span>quantity</span>  
-             </th> 
-             <th scope="row">  
-                 <span>Remove</span>  
-             </th> 
-               
-         </tr>  
-     </thead>  
-     <tbody>  
-         <tr *ngFor="let item of cartItems; let i=index">  
-            <td><span>{{item.Prodotto}}</span></td>  
-             <td><span>{{item.qty}}</span></td>  
-             <td><span>{{item.price}}€</span></td>  
-             <!--<td><span>{{ (item.qty*item.price) | currency: 'EUR'}}</span></td>-->
-            <!-- <td><span>{{item.qty}} </span> * 
-                <span>{{item.price}}</span> </td> --> 
-             <td> <button class="btn2"><i class= "fa fa-minus" (click)="dec(item)"></i></button>
-                <button class="btn2"><i class= "fa fa-plus" (click)="inc(item)"></i></button>
-            </td>  
-            <td style="cursor: pointer;" > <button class="btn2"><i class="fa fa-trash" (click)="deleteItem(item, i)" ></i></button></td>
-         </tr>
-         <tr class="total">
-             <td></td>  
-             <td> <strong>Costo consegna:  </strong></td>  
-             <td><strong>Total :  {{ cartTotal | currency: 'EUR'}}</strong></td>  
-             <td></td>  
-             <td></td>  
-         </tr> 
-     </tbody>  
-   </table>  
-   </div>
+ <h1>Shopping Cart</h1>
+
 
    <div class="table-responsive-sm">
     <table class="table">
@@ -71,13 +20,13 @@
               <td>{{item.price}}€</td>
               <td><button class="btn2"><i class= "fa fa-minus" (click)="dec(item)"></i></button>
                 <button class="btn2"><i class= "fa fa-plus" (click)="inc(item)"></i></button></td>
-                <td style="cursor: pointer;" > <button class="btn2"><i class="fa fa-trash" (click)="deleteItem(item, i)" ></i></button></td>
+                <td style="cursor: pointer;"><button class="btn2"><i class="fa fa-trash" (click)="deleteItem(item, i)" ></i></button></td>
             </tr>
             <tr>
               <th scope="row"></th>
-              <td> <strong>Costo consegna:  </strong></td>  
-              <td><strong>Total :  {{ cartTotal | currency: 'EUR'}}</strong></td>  
-              <td> <button class="btn2"> <a class="nav-link active" [routerLink] ="['/riepilogo']">Submit</a></button></td>
+              <td> <strong>Costo consegna: {{cartTotal > ordineMinimo? 0 : costoConsegna }} €</strong></td>  
+              <td><strong>Total :  {{ cartTotal > ordineMinimo ? cartTotal : (cartTotal + costoConsegna)}}€</strong></td>  
+              <td><button class="btn3"><a class="nav-link active" [routerLink] ="['/riepilogo']">Submit</a></button></td>
             </tr>
            
           </tbody>

@@ -1,11 +1,26 @@
-.main {
-    height: 800px;
-   
+body{
+    min-height: 650px;
+    background-image: url("https://raw.githubusercontent.com/nirmalieo3/FoodDeliveryLab/master/img/photo3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.main{
+  width:100%;
+  background-color: thistle;
+  opacity:.9;
+  min-height: 500px;
+  margin-top: 80px;
+}
+h3,h2{
+    font-weight: 600;
+}
+
+
 table{
     width:60%;
-    color:white;
-    margin: 50px 50px;
+    color:black;
+    margin: 50px auto;
     font-size: 22px;
 }
 h1{
@@ -13,7 +28,7 @@ h1{
      padding-top: 20px;
 }
 input{
-    margin: 10px 50px;
+    margin: 10px auto;
 }
 .table-borderless > tbody > tr > td,
 .table-borderless > tbody > tr > th,
@@ -21,8 +36,31 @@ input{
 .table-borderless > thead > tr > th {
     border: none;
 }
-.style{
+/*.style{
     background-color: cornflowerblue;
     margin:50px;
     width:60%;
+}*/
+.btn a{
+    color:white;
+}
+.example-card{
+    max-width: 430px;
+    min-height:370px;
+    background-color: burlywood;
+    margin:0 auto;
+   }
+.submit-btn{
+    width:80%;
+   
+    margin: 0 auto;
+}
+.btn{
+    height:50px;
+}
+
+
+mat-card-content{
+    
+    text-align: center;
 }

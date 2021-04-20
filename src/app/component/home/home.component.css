@@ -14,6 +14,7 @@
     margin: 0 auto;
     height:80px;
     border-radius: 5px;
+    margin-top: 100px;
 }
 
 .me-2{
@@ -21,6 +22,30 @@
     height: 55px;
     border-radius: 5px;
 }
+.btn{
+    background-color:greenyellow;
+    width:100px;
+}
+.btn:hover{
+    background-color: darkolivegreen;
+}
+.app{
+    width:250px;
+    height:40px;    
+    margin: 0 auto;
+  }
+  .app1, .app2{
+    width:48%;
+    height:96%;
+    display: inline-block;
+  }
+  
+.app-img{
+    width:98%;
+    height:97%;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
 /*mat card*/
 .container1{
     display: flex;
@@ -29,23 +54,35 @@
    
 }
 .example-card{
-    width:340px;
+    width:360px;
      height:200px;
-    margin: 70px auto;
+    margin: 40px auto;
     border-radius: 5px;
 
 }
 .mat-card-image{
     height:200px;
+    border: 5px ridge white;
 }
 
   .style{
-      padding: 70px 0;
+      padding: 35px 0;
+  }
+  h1{
+      margin-bottom: 60px;
+      font-size: 35px;
+      color:white;
   }
   .content{
       color:white;
   }
-  
+  /*gallary*/
+  .container{
+      width:60%;
+      margin:0 auto;
+      
+  }
+ 
     @media only screen and (max-width: 600px) {
         .navbar{
             width: 85%;
@@ -53,7 +90,18 @@
         .me-2{
             width: 15em;
         }
+        .btn{
+            width:70px;
+        }
   }
+  @media only screen and (min-width: 600px)and (max-width: 1100px) {
+    .navbar{
+        width: 65%;
+    }
+    .me-2{
+        width: 30em;
+    }
+}
 
   /*gallary*/
  

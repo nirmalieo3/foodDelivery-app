@@ -1,18 +1,31 @@
 
 <div class="div">
-    <div class=" style">
-       <nav class="navbar navbar-light bg-light">
-         <div class= " container-fluid">
-           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-           </form>
-          </div>
-        </nav>
-    </div> 
+  <div class=" style">
+    <h1 align="center">Lab For Food Delivery</h1>
+   <nav class="navbar navbar-light bg-light">
+    <div class= " container-fluid">
+      <form class="d-flex" action="post" [formGroup]="searchForm">
+        <input class="form-control me-2" type="search" formControlName="search" placeholder="indirizzo,numero civico" aria-label="Search">
+       <button class="btn btn-outline-success" type="submit" (click)="searchForm.get('search').reset()">Search</button>
+      </form>
+    </div>
+   </nav>
+  </div> 
+  <section class="app">
+    <div class="app1">
+      <a href="https://www.apple.com/app-store/" target="_blank"><img class="app-img" src="assets/images/app.jpg"></a>
+    </div>
+    <div class= "app2">
+      <a href="https://play.google.com/store" target="_blank"><img class="app-img" src="assets/images/google-play.png"></a>
+    </div>
+  </section>
   <div class="container1" >
-   <mat-card class="example-card" *ngFor="let card of cards">
-    <img mat-card-image [src]= "card.img">         
-   </mat-card>     
+    <mat-card class="example-card" *ngFor="let card of cards">
+      <img mat-card-image [src]= "card.img">      
+    </mat-card>    
+  </div>
+  <div class="container">
+  <app-carousel></app-carousel>
   </div>
 </div>
+

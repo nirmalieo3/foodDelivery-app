@@ -10,7 +10,8 @@ body{
 .example-card{
     width:450px;
     background-color: rgb(19, 18, 18);
-    margin: 70px auto;
+    margin: 130px auto 40px;
+   
     border-radius: 5px;
     border: 1px solid rgb(153, 22, 22)
 }
